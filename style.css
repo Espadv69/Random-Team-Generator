@@ -30,3 +30,13 @@ body {
 
   min-height: 100dvh;
 }
+
+body.light {
+  color: var(--txt-light);
+  background: var(--bg-light);
+}
+
+body.dark {
+  color: var(--txt-dark);
+  background: var(--bg-dark);
+}
