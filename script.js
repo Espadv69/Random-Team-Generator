@@ -10,8 +10,19 @@ function addParticipant() {
     participants.push(nameInput)
     console.log(participants)
     $name.value = ''
-    loadParticipants() // toDo
+    displayParticipants()
   } else {
     alert('Error making participant')
   }
+}
+
+function displayParticipants() {
+  const $participantList = document.querySelector('.participants')
+  $participantList.innerHTML = ''
+
+  participants.map((participant) => {
+    const $participant = document.createElement('li')
+    $participant.textContent = participant
+    $participantList.appendChild($participant)
+  })
 }
