@@ -60,6 +60,30 @@ header {
   gap: 5px;
 }
 
+button {
+  cursor: pointer;
+  padding: .5rem;
+
+  border: 2px solid currentColor;
+  border-radius: 5px;
+
+  color: currentColor;
+  background: transparent;
+}
+
+.form {
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  input,
+  button {
+    padding: .5rem;
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -74,7 +98,7 @@ header {
       list-style: none;
 
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
