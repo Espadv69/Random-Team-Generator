@@ -40,3 +40,20 @@ function generateTeams() {
   }
   displayTeams() // toDo
 }
+
+/**
+ * @param {Array} teams
+ */
+
+function displayTeams(teams) {
+  const $container = document.querySelector('.teams')
+  $container.innerHTML = ''
+
+  teams.forEach((team, index) => {
+    const $div = document.createElement('div')
+    $div.innerHTML = `
+      <strong>Team ${index + 1}:</strong> ${team.join(' - ')}
+    `
+    $container.appendChild($div)
+  })
+}
