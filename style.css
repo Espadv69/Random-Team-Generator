@@ -46,6 +46,11 @@ body.dark {
   background: var(--bg-dark);
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: .4rem;
+}
+
 header {
   padding: 0.3rem 0;
 
@@ -74,6 +79,7 @@ header {
   }
 
   .teams-grid {
+    padding: .2rem .5rem;
     background: #0066ff63;
   }
 }
