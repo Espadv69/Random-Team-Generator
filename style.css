@@ -29,6 +29,8 @@ body {
     sans-serif;
 
   min-height: 100dvh;
+
+  transition: color .3s ease, background .3s ease;
 }
 
 body.light {
