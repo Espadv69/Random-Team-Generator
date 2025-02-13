@@ -54,3 +54,17 @@ header {
   align-items: center;
   gap: 5px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  .participants-grid {
+    background: #0066ff;
+  }
+
+  .teams-grid {
+    background: #0066ff63;
+  }
+}
