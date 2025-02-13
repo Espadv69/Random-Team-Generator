@@ -29,8 +29,11 @@ body {
     sans-serif;
 
   min-height: 100dvh;
+  padding: 0 1rem;
 
-  transition: color .3s ease, background .3s ease;
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
 }
 
 body.light {
@@ -41,4 +44,13 @@ body.light {
 body.dark {
   color: var(--txt-dark);
   background: var(--bg-dark);
+}
+
+header {
+  padding: 0.3rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
 }
