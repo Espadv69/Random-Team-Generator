@@ -20,9 +20,23 @@ function displayParticipants() {
   const $participantList = document.querySelector('.participants')
   $participantList.innerHTML = ''
 
-  participants.map((participant) => {
+  participants.forEach((participant) => {
     const $participant = document.createElement('li')
     $participant.textContent = participant
     $participantList.appendChild($participant)
   })
+}
+
+function generateTeams() {
+  if (participants.length <= 2)
+    return console.error('You need at least 3 participants to generate a team')
+
+  const shuffled = [...participants].sort(() => Math.random() - 0.5)
+
+  const teams = []
+  while (shuffled.length > 0) {
+    const team = shuffled.splice(0, 2)
+    teams.push(team)
+  }
+  displayTeams() // toDo
 }
