@@ -57,3 +57,12 @@ function displayTeams(teams) {
     $container.appendChild($div)
   })
 }
+
+// Theme toogle
+const $btnTheme = document.querySelector('.themeToogle')
+let isDark = false
+
+$btnTheme.addEventListener('click', () => {
+  isDark = !isDark
+  document.body.className = isDark ? 'dark' : 'light'
+})
