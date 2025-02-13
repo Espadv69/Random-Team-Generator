@@ -61,10 +61,25 @@ header {
   gap: 1rem;
 
   .participants-grid {
+    color: white;
+    padding: .2rem .5rem;
     background: #0066ff;
+
+    .participants {
+      list-style: none;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .teams-grid {
     background: #0066ff63;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
