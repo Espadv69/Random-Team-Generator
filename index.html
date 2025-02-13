@@ -1,29 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Team Generator</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <h1>Random Team Generates</h1>
-      <button class="themeToogle">Toogle Theme</button>
+      <button class="themeToogle">Theme</button>
     </header>
 
     <div class="form">
-      <input type="text" class="name" placeholder="Enter name of participant">
+      <input type="text" class="name" placeholder="Enter name of participant" />
       <button onclick="addParticipant()">Add Participant</button>
     </div>
 
-    <h2>Participants</h2>
-    <ul class="participants"></ul>
+    <div class="grid">
+      <div>
+        <h2>Participants</h2>
+        <ul class="participants"></ul>
+        <button onclick="generateTeams()">Generate Team</button>
+      </div>
 
-    <button onclick="generateTeams()">Generate Team</button>
-
-    <h2>Teams</h2>
-    <div class="teams"></div>
+      <div>
+        <h2>Teams</h2>
+        <div class="teams"></div>
+      </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
