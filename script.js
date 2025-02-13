@@ -29,16 +29,16 @@ function displayParticipants() {
 
 function generateTeams() {
   if (participants.length <= 2)
-    return console.error('You need at least 3 participants to generate a team')
+    return alert('You need at least 3 participants to generate a team')
 
   const shuffled = [...participants].sort(() => Math.random() - 0.5)
 
   const teams = []
   while (shuffled.length > 0) {
-    const team = shuffled.splice(0, 2)
+    const team = shuffled.splice(0, 3)
     teams.push(team)
   }
-  displayTeams() // toDo
+  displayTeams(teams)
 }
 
 /**
