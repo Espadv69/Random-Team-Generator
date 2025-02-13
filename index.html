@@ -13,15 +13,15 @@
     </header>
 
     <div class="form">
-      <input type="text" class="name" placeholder="Enter name of participant" />
+      <input type="text" class="name" maxlength="10" placeholder="Enter name of participant" />
       <button onclick="addParticipant()">Add Participant</button>
     </div>
 
+    <button onclick="generateTeams()" class="generateBtn">Generate Team</button>
     <div class="grid">
       <div class="participants-grid">
         <h2>Participants</h2>
         <ul class="participants"></ul>
-        <button onclick="generateTeams()">Generate Team</button>
       </div>
 
       <div class="teams-grid">
