@@ -47,8 +47,9 @@ body.dark {
 }
 
 h2 {
-  text-align: center;
   margin-bottom: .4rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 header {
@@ -69,6 +70,10 @@ button {
 
   color: currentColor;
   background: transparent;
+}
+
+.generateBtn {
+  margin-bottom: 1rem;
 }
 
 .form {
@@ -104,6 +109,7 @@ button {
 
   .teams-grid {
     padding: .2rem .5rem;
+
     background: #0066ff63;
   }
 }
